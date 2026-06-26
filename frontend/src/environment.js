@@ -1,5 +1,7 @@
 let IS_PROD = true;
 
-const server = "https://video-conferncing-backend.onrender.com";
+const server = IS_PROD
+  ? "https://video-conferncing-backend.onrender.com"
+  : "http://localhost:8000";
 
 export default server;
